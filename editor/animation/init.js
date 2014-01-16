@@ -131,6 +131,7 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
             var attrCell = {"stroke": 2, "stroke-color": colorGrey4};
             var attrFull = {"stroke": 0, "fill": colorBlue4};
             var attrFullWrong = {"stroke": 0, "fill": colorBlue2};
+            var attrEmptyWrong = {"stroke": 0, "fill": colorGrey2};
 
 
             this.create = function(root, image, wrongs) {
@@ -139,11 +140,15 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
                     for (var j = 0; j < image[0].length; j++){
                         var x = j * cell;
                         var y = i * cell;
-                        console.log(i, j, image[i][j], x, y);
                         paper.rect(x, y, cell, cell).attr(attrCell);
-                        if (image[i][j] === 1) {
+                        var el = image[i][j];
+                        var isRight = wrongs.indexOf(" "+i +","+j+" ") === -1;
+                        if (el === 1) {
                             paper.rect(x + padding, y + padding, innerCell, innerCell).attr(
-                                wrongs.indexOf(" "+i +","+j+" ") === -1 ? attrFull : attrFullWrong);
+                                isRight ? attrFull : attrFullWrong);
+                        }
+                        else if (el === 0 && !isRight) {
+                            paper.rect(x + padding, y + padding, innerCell, innerCell).attr(attrEmptyWrong);
                         }
                     }
                 }

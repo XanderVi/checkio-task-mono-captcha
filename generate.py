@@ -86,7 +86,8 @@ numbers = [
     911,
     777,
     21312,
-    80808
+    80808,
+    1234567890
 ]
 
 def generate_number(number, noise=False):
@@ -101,3 +102,5 @@ for numb in numbers:
     #draw(generate_number(numb))
     #print()
     print('{{"input": {0},\n"answer": {1}}},\n'.format(generate_number(numb), numb))
+
+draw(generate_number(1234567890))
