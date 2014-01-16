@@ -75,15 +75,9 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
                 $content.find('.call').html('Pass: checkio(' + JSON.stringify(checkioInput) + ')');
                 $content.find('.answer').remove();
             }
-            //Dont change the code before it
 
-            //Your code here about test explanation animation
-            //$content.find(".explanation").html("Something text for example");
-            //
-            //
-            //
-            //
-            //
+            var canvas = new CaptchaCanvas();
+            canvas.create($content.find(".explanation")[0], checkioInput, explanation);
 
 
             this_e.setAnimationHeight($content.height() + 60);
@@ -106,26 +100,56 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
 //            });
 //        });
 
-        var colorOrange4 = "#F0801A";
-        var colorOrange3 = "#FA8F00";
-        var colorOrange2 = "#FAA600";
-        var colorOrange1 = "#FABA00";
+        function CaptchaCanvas(options) {
+            var colorOrange4 = "#F0801A";
+            var colorOrange3 = "#FA8F00";
+            var colorOrange2 = "#FAA600";
+            var colorOrange1 = "#FABA00";
 
-        var colorBlue4 = "#294270";
-        var colorBlue3 = "#006CA9";
-        var colorBlue2 = "#65A1CF";
-        var colorBlue1 = "#8FC7ED";
+            var colorBlue4 = "#294270";
+            var colorBlue3 = "#006CA9";
+            var colorBlue2 = "#65A1CF";
+            var colorBlue1 = "#8FC7ED";
 
-        var colorGrey4 = "#737370";
-        var colorGrey3 = "#9D9E9E";
-        var colorGrey2 = "#C5C6C6";
-        var colorGrey1 = "#EBEDED";
+            var colorGrey4 = "#737370";
+            var colorGrey3 = "#9D9E9E";
+            var colorGrey2 = "#C5C6C6";
+            var colorGrey1 = "#EBEDED";
 
-        var colorWhite = "#FFFFFF";
-        //Your Additional functions or objects inside scope
-        //
-        //
-        //
+            var colorWhite = "#FFFFFF";
+
+            options = options || {};
+
+            var cell = options["cell"] || 18;
+            var innerCell = cell * 2 / 3;
+            var padding = cell / 6;
+
+
+            var root;
+            var paper;
+
+            var attrCell = {"stroke": 2, "stroke-color": colorGrey4};
+            var attrFull = {"stroke": 0, "fill": colorBlue4};
+            var attrFullWrong = {"stroke": 0, "fill": colorBlue2};
+
+
+            this.create = function(root, image, wrongs) {
+                paper = Raphael(root, cell * image[0].length, cell * image.length);
+                for (var i = 0; i < image.length; i++) {
+                    for (var j = 0; j < image[0].length; j++){
+                        var x = j * cell;
+                        var y = i * cell;
+                        console.log(i, j, image[i][j], x, y);
+                        paper.rect(x, y, cell, cell).attr(attrCell);
+                        if (image[i][j] === 1) {
+                            paper.rect(x + padding, y + padding, innerCell, innerCell).attr(
+                                wrongs.indexOf(" "+i +","+j+" ") === -1 ? attrFull : attrFullWrong);
+                        }
+                    }
+                }
+            }
+
+        }
 
 
     }
