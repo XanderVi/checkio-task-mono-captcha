@@ -47,7 +47,7 @@ DIGITS = [
         [0, 1, 0, 0],
         [0, 1, 1, 1],
         [0, 1, 0, 1],
-        [0, 1, 1, 0]
+        [0, 0, 1, 1]
     ],
     [
         [0, 1, 1, 1],
@@ -104,3 +104,6 @@ for numb in numbers:
     print('{{"input": {0},\n"answer": {1}}},\n'.format(generate_number(numb), numb))
 
 draw(generate_number(1234567890))
+
+for d in DIGITS:
+    print(list(list(z) for z in zip(*d)))
