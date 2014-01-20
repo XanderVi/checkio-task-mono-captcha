@@ -136,7 +136,7 @@
     <path d="M390.5,90.5 L420.5,90.5 L420.5,120.5 L390.5,120.5 z" fill-opacity="0" stroke="#737370" stroke-width="2"/>
     <path d="M390.5,120.5 L420.5,120.5 L420.5,150.5 L390.5,150.5 z" fill-opacity="0" stroke="#737370" stroke-width="2"/>
     <path d="M390.5,150.5 L420.5,150.5 L420.5,180.5 L390.5,180.5 z" fill-opacity="0" stroke="#737370" stroke-width="2"/>
-    <path d="M420.5,30.5 L450.5,30.5 L450.5,60.5 L420.5,60.5 z" fill-opacity="0" stroke="#737370" stroke-width="2"/>
+    <path d="M420.5,30.5 L450.5,30.5 L450.5,60.5 L420.5,60.5 z" fill-opacity="0" stroke="#9D9E9E" stroke-width="2"/>
     <path d="M420.5,60.5 L450.5,60.5 L450.5,90.5 L420.5,90.5 z" fill-opacity="0" stroke="#737370" stroke-width="2"/>
     <path d="M420.5,90.5 L450.5,90.5 L450.5,120.5 L420.5,120.5 z" fill-opacity="0" stroke="#737370" stroke-width="2"/>
     <path d="M420.5,120.5 L450.5,120.5 L450.5,150.5 L420.5,150.5 z" fill-opacity="0" stroke="#737370" stroke-width="2"/>
@@ -182,12 +182,12 @@
       <path d="M365.5,35.5 L385.5,35.5 L385.5,55.5 L365.5,55.5 z" fill="#294270"/>
       <path d="M365.5,35.5 L385.5,35.5 L385.5,55.5 L365.5,55.5 z" fill-opacity="0" stroke="#294270" stroke-width="2"/>
     </g>
-    <text transform="matrix(1, 0, 0, 1, 294.272, 321.632)">
-      <tspan x="-234.272" y="-76.632" font-family="HelveticaNeue-Bold" font-size="36" fill="#000000">[[1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1],</tspan>
-      <tspan x="-234.272" y="-32.632" font-family="HelveticaNeue-Bold" font-size="36" fill="#000000"> [0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1],</tspan>
-      <tspan x="-234.272" y="11.368" font-family="HelveticaNeue-Bold" font-size="36" fill="#000000"> [0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1],</tspan>
-      <tspan x="-234.272" y="55.368" font-family="HelveticaNeue-Bold" font-size="36" fill="#000000"> [0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1],</tspan>
-      <tspan x="-234.272" y="99.368" font-family="HelveticaNeue-Bold" font-size="36" fill="#000000"> [1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1]]</tspan>
+    <text transform="matrix(1, 0, 0, 1, 315, 342)">
+      <tspan x="-277.5" y="-97" font-family="HelveticaNeue-Bold" font-size="36" fill="#000000">[[0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0],</tspan>
+      <tspan x="-277.5" y="-53" font-family="HelveticaNeue-Bold" font-size="36" fill="#000000"> [0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0],</tspan>
+      <tspan x="-277.5" y="-9" font-family="HelveticaNeue-Bold" font-size="36" fill="#000000"> [0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0],</tspan>
+      <tspan x="-277.5" y="35" font-family="HelveticaNeue-Bold" font-size="36" fill="#000000"> [0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0],</tspan>
+      <tspan x="-277.5" y="79" font-family="HelveticaNeue-Bold" font-size="36" fill="#000000"> [0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0]]</tspan>
     </text>
     <path d="M720.5,30.5 L750.5,30.5 L750.5,60.5 L720.5,60.5 z" fill-opacity="0" stroke="#737370" stroke-width="2"/>
     <path d="M720.5,60.5 L750.5,60.5 L750.5,90.5 L720.5,90.5 z" fill-opacity="0" stroke="#737370" stroke-width="2"/>
@@ -366,12 +366,12 @@
       <path d="M995.5,35.5 L1015.5,35.5 L1015.5,55.5 L995.5,55.5 z" fill="#294270"/>
       <path d="M995.5,35.5 L1015.5,35.5 L1015.5,55.5 L995.5,55.5 z" fill-opacity="0" stroke="#294270" stroke-width="2"/>
     </g>
-    <text transform="matrix(1, 0, 0, 1, 924.272, 321.632)">
-      <tspan x="-234.272" y="-76.632" font-family="HelveticaNeue-Bold" font-size="36" fill="#000000">[[1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1],</tspan>
-      <tspan x="-234.272" y="-32.632" font-family="HelveticaNeue-Bold" font-size="36" fill="#000000"> [0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1],</tspan>
-      <tspan x="-234.272" y="11.368" font-family="HelveticaNeue-Bold" font-size="36" fill="#000000"> [0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1],</tspan>
-      <tspan x="-234.272" y="55.368" font-family="HelveticaNeue-Bold" font-size="36" fill="#000000"> [1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1],</tspan>
-      <tspan x="-234.272" y="99.368" font-family="HelveticaNeue-Bold" font-size="36" fill="#000000"> [1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1]]</tspan>
+    <text transform="matrix(1, 0, 0, 1, 915, 330)">
+      <tspan x="-275" y="-85" font-family="HelveticaNeue-Bold" font-size="36" fill="#000000">[[0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0],</tspan>
+      <tspan x="-275" y="-41" font-family="HelveticaNeue-Bold" font-size="36" fill="#000000"> [0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0],</tspan>
+      <tspan x="-275" y="3" font-family="HelveticaNeue-Bold" font-size="36" fill="#000000"> [0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1,0 ],</tspan>
+      <tspan x="-275" y="47" font-family="HelveticaNeue-Bold" font-size="36" fill="#000000"> [0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0],</tspan>
+      <tspan x="-275" y="91" font-family="HelveticaNeue-Bold" font-size="36" fill="#000000"> [0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0]]</tspan>
     </text>
     <g>
       <path d="M1025.5,35.5 L1045.5,35.5 L1045.5,55.5 L1025.5,55.5 z" fill="#65A1CF"/>
