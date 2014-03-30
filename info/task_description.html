@@ -1,5 +1,5 @@
 <p>
-    Let's teach Stephan to recognize simple numbers. The Robots use monospaced fonts with a low resolution.
+    Let's teach Stephan to recognize simple numbers. The Robots use monospaced fonts with low resolution.
     You can see the font on the picture below. This font has noise immunity to one-pixel error.
 </p>
 
@@ -9,7 +9,7 @@
 </p>
 
 <p>
-    Your program should read the number shown in an image encoded as a 0-1 2D array.
+    Your program should read the number shown in an image encoded as a binary matrix.
     Each digit can contain a wrong pixel, but no more than one for each digit.
     The space between digits is equal to one pixel (just think about "1" which is narrower than other letters, but has a width of 3 pixels)
 </p>
@@ -21,11 +21,11 @@
 
 
 <p>
-    <strong>Input: </strong> An image as a 2D list with 1 and 0.
+    <strong>Input: </strong> An image as a list of lists with 1 or 0.
 </p>
 
 <p>
-    <strong>Output: </strong> The number, an int.
+    <strong>Output: </strong> The number as an integer.
 </p>
 
 
@@ -50,8 +50,22 @@ checkio([[0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0],
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    Learn how to encode a simple captcha.
+    This task will show you how optical character recognition works.
+    Also you will familiarize with low-resolution fonts with noise-immunity.
+    This can be useful for the systems that required the reliability more than graphical features.
 </p>
+
+
+<p>
+    <strong>Precondition:</strong>
+    matrix_rows == 5<br>
+    5 &le; matrix_columns < 30<br>
+    &forall; x ∈ matrix : x == 0 or x == 1<br>
+    digit_width == 3<br>
+    Each digit contains no more than one wrong pixel.<br>
+    digits_space == 1
+</p>
+
 
 
 <p class="for_info_only">
