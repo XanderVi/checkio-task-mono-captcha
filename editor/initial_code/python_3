@@ -1,3 +1,5 @@
+from typing import List
+
 FONT = ("--X--XXX-XXX-X-X-XXX--XX-XXX-XXX--XX-XX--"
         "-XX----X---X-X-X-X---X-----X-X-X-X-X-X-X-"
         "--X---XX--X--XXX-XX--XXX--X--XXX-XXX-X-X-"
@@ -5,7 +7,7 @@ FONT = ("--X--XXX-XXX-X-X-XXX--XX-XXX-XXX--XX-XX--"
         "--X--XXX-XXX---X-XX---XX-X---XXX-XX---XX-")
 
 
-def checkio(image):
+def checkio(image: List[List[int]]) -> int:
     return 1
 
 if __name__ == '__main__':
