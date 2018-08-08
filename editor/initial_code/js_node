@@ -1,0 +1,28 @@
+"use strict";
+
+var FONT = ["--X--XXX-XXX-X-X-XXX--XX-XXX-XXX--XX-XX--",
+            "-XX----X---X-X-X-X---X-----X-X-X-X-X-X-X-",
+            "--X---XX--X--XXX-XX--XXX--X--XXX-XXX-X-X-",
+            "--X--X-----X---X---X-X-X-X---X-X---X-X-X-",
+            "--X--XXX-XXX---X-XX---XX-X---XXX-XX---XX-"]
+
+function captcha(data) {
+    // your code here
+    return 0;
+}
+
+var assert = require('assert');
+if (!global.is_checking) {
+    // These "asserts" are used for self-checking and not for an auto-testing
+    assert.equal(captcha([[0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0],
+                          [0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0],
+                          [0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0],
+                          [0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0],
+                          [0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0]]), 394)
+    assert.equal(captcha([[0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0],
+                          [0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0],
+                          [0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0],
+                          [0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0],
+                          [0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0]]), 394)
+    console.log("Coding complete? Click 'Check' to earn cool rewards!");
+}

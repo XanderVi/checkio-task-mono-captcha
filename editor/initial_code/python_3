@@ -7,17 +7,17 @@ FONT = ("--X--XXX-XXX-X-X-XXX--XX-XXX-XXX--XX-XX--"
         "--X--XXX-XXX---X-XX---XX-X---XXX-XX---XX-")
 
 
-def checkio(image: List[List[int]]) -> int:
+def captcha(image: List[List[int]]) -> int:
     return 1
 
 if __name__ == '__main__':
     #These "asserts" using only for self-checking and not necessary for auto-testing
-    assert checkio([[0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0],
+    assert captcha([[0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 0],
                     [0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0],
                     [0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0],
                     [0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0],
                     [0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0]]) == 394, "394 clear"
-    assert checkio([[0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0],
+    assert captcha([[0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 1, 0],
                     [0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0],
                     [0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0],
                     [0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0],
